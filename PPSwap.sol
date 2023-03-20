@@ -47,7 +47,6 @@ contract PPSwap is ERC20Interface, SafeMath {
     uint public ppsPrice = 1;  // how many PPS can we buy with 1eth
     address payable trustAccount;
     address contractOwner;
-    bool internal locked;
 
     mapping(uint => mapping(string => address)) offers; // orderID, key, value
     mapping(uint => address payable) offerMakers;
